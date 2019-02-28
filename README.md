@@ -34,15 +34,15 @@ $ npm run google-amp-template
 
 ## Screenshot
 
-![Google-AMP-Template Mobile](https://raw.githubusercontent.com/tborges/npm-packages/master/google-amp-template/Google-AMP-Template-mobile.png)
+![Google-AMP-Template Mobile](https://raw.githubusercontent.com/tborges/google-amp-template/master/Google-AMP-Template-mobile.png)
 
   
 
-![Google-AMP-Template Desktop 0](https://raw.githubusercontent.com/tborges/npm-packages/master/google-amp-template/Google-AMP-Template-desktop-0.png)
+![Google-AMP-Template Desktop 0](https://raw.githubusercontent.com/tborges/google-amp-template/master/Google-AMP-Template-desktop-0.png)
 
   
 
-![Google-AMP-Template Desktop 1](https://raw.githubusercontent.com/tborges/npm-packages/master/google-amp-template/Google-AMP-Template-desktop-1.png)
+![Google-AMP-Template Desktop 1](https://raw.githubusercontent.com/tborges/google-amp-template/master/Google-AMP-Template-desktop-1.png)
 
 
 

@@ -1,5 +1,3 @@
-"use strict"; //Always use this
-
 const fs = require('fs'); //File Server
 const path = require('path');
 
@@ -46,7 +44,4 @@ function copyFile(src, dest) {
 
   readStream.pipe(fs.createWriteStream(dest));
 }
-fs.rename('index.html', './amp/myrenamedfile.html', function (err) {
-  if (err)
-  console.log('File Renamed!');
-});
+

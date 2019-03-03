@@ -14,17 +14,22 @@ Use this package to create a website that uses Google AMP technology on your mob
   </div>
   <br><br>
 
-## Google AMP (Accelerated Mobile Pages)
+## About:: Google AMP (Accelerated Mobile Pages)
 The Google AMP project is an open-source initiative aiming to make the web better for all. The project enables the creation of websites and ads that are consistently fast, beautiful and high-performing across devices and distribution platforms. The Google AMP Cache serves cached copies of valid AMP content published to the web. Serve content directly from the Google AMP Cache to provide a fast user experience. <a href="https://developers.google.com/amp/cache/overview">Read more</a>
 
-## Version
-Beta-Mary - version 0.1 comes with: 
-1. Sidebar
-2. Vimeo Videos
-3. Carousel
-4. Pinterest
-5. Google Analytics
-6. <a href="https://github.com/tborges/google-amp-template/labels/Request%20Add%2FRemove%20Features">Request Add/Remove Features here.</a>
+<br>
+<br>
+
+## Google-AMP-Template
+
+### Beta-Mary - Version <a href="https://npmjs.org/package/google-amp-template"><img src="https://img.shields.io/npm/v/google-amp-template.svg?style=flat-square" alt="NPM version" /></a> 
+
+ - Sidebar
+ - Vimeo Videos 
+ - Carousel
+ - Pinterest
+ - Google Analytics
+ - <a href="https://github.com/tborges/google-amp-template/labels/Request%20Add%2FRemove%20Features">Request Add/Remove Features here.</a>
 
 <br>
 <br>
@@ -39,19 +44,31 @@ $ npm run google-amp-template
 <br>
 <br>
 
-## Example
-In this tutorial, you'll learn how to use the [Google-AMP-Template](https://www.npmjs.com/package/google-amp-template) package in a just couple minutes using command line interface (CLI).
+
+## Git Clone Example
 
 ``` html
-$ mkdir my-first-amp    // Create a new folder
-$ cd my-first-amp   // Enter in the "my-first-amp" folder
-$ npm install google-amp-template   // Install the package using NPM command
+$ git clone https://github.com/tborges/google-amp-template.git
 $ cd google-amp-template
-$ npm install
-$ npm run google-amp-template   // Run the package
-// The package will create a brand new folder called "amp"
-// Inside of the "amp" folder is your template ready for use.
+$ npm run google-amp-template // Run the package
+// The package will create a brand new folder called "amp".
+// Inside of "amp" folder open the index.html file (this is your AMP template).
 ```
+
+## NPM Install Example
+
+``` html
+$ mkdir my-first-amp
+$ cd my-first-amp
+$ npm init
+$ npm install google-amp-template
+$ cd node_modules
+$ cd google-amp-template
+$ npm run google-amp-template // Run the package
+// The package will create a brand new folder called "amp".
+// Inside of "amp" folder open the index.html file (this is your AMP template).
+```
+
 
 <br>
 <br>

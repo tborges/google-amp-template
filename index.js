@@ -1,22 +1,26 @@
+"use strict"; //Always use this
 
-const fs = require('fs');
+const fs = require('fs'); //File Server
 const path = require('path');
 
 let filename = 'index.html';
 let src = path.join(__dirname, filename);
 let destDir = path.join(__dirname, 'amp');
 
-fs.access(destDir, (err) => {
-  if(err)
-    fs.mkdirSync(destDir);
 
+
+fs.access(destDir, (err) => {
+  if(err) 
+    fs.mkdirSync(destDir);  
   copyFile(src, path.join(destDir, filename));
 });
+
 
 
 function copyFile(src, dest) {
 
   let readStream = fs.createReadStream(src);
+
 
   readStream.once('error', (err) => {
     console.log(err);
@@ -42,3 +46,7 @@ function copyFile(src, dest) {
 
   readStream.pipe(fs.createWriteStream(dest));
 }
+fs.rename('index.html', './amp/myrenamedfile.html', function (err) {
+  if (err)
+  console.log('File Renamed!');
+});

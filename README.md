@@ -94,4 +94,12 @@ $ npm run google-amp-template // Run the package
   <a href="https://github.com/tborges/npm-packages/pulls">
     <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=popout-square" alt="Prs-Welcome" />
   </a>
+  <br>
+<br>
+<h2>Buy Me A Coffee</2>
+<br>
+  <!-- Buy Me A Coffee -->
+<a href="https://www.buymeacoffee.com/TBorges" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+  
+  
 </div>

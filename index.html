@@ -19,34 +19,33 @@
     <!-- Use Schema.org for most search engines -->
     <script type="application/ld+json">
       {
-          "@context": "http://schema.org/",
-          "@type": "Product",
-          "name": "Apple",
-          "image": "http://www.ampbyexample.com/img/golden_apple1_1024x682.jpg",
-          "description": "Lorem ipsum",
-          "mpn": "925872",
-          "brand": {
-              "@type": "Fruit",
-              "name": "Apple"
-          },
-          "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.4",
-              "reviewCount": "88"
-          },
-          "offers": {
-              "@type": "Offer",
-              "priceCurrency": "USD",
-              "price": "1.99",
-              "priceValidUntil": "2020-11-05",
-              "itemCondition": "http://schema.org/UsedCondition",
-              "availability": "http://schema.org/InStock",
-              "seller": {
-                  "@type": "Retail",
-                  "name": "AMP by Example"
-              }
-          }
-      }
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Apple",
+        "image": "https://unsplash.it/300/200/?image=100",
+        "description": "Lorem ipsum",
+        "mpn": "925872",
+        "brand": {
+            "@type": "Product",
+            "name": "Apple"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.4",
+            "reviewCount": "88"
+        },
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "1.99",
+            "priceValidUntil": "2020-11-05",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "name": "Google-AMP-Template"
+            }
+        }
+    }
     </script>
 
     <!-- AMP-CUSTOM - AMP obliges inline CSS. There is a maximum of 50 kilobytes allowed. -->

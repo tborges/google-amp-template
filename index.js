@@ -25,7 +25,7 @@ function copyFile(src, dest) {
       '|  ' + '\n' +
       '||' + '\n' +
       '||| Google-AMP-Template ' + '\n' +
-      '||| Beta-Mary - version 0.1' + '\n' +
+      '||| Beta-Mary - version 0.1.5' + '\n' +
       '||| ' + '\n' +
       '||| Help this open-source project: ' + '\n' +
       '||| GitHub: https://github.com/tborges/google-amp-template' + '\n' +

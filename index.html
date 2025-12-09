@@ -279,11 +279,16 @@
     
     <!-- Optional Files -->
     <!-- Google Analytics -->
-    <amp-analytics type="googleanalytics">
+    <amp-analytics type="gtag" data-credentials="include">
       <script type="application/json">
         {
           "vars": {
-            "account": "UA-30145059-32"
+            "gtag_id": "G-Q4N7BF6JVG",
+            "config": {
+              "G-Q4N7BF6JVG": {
+                "groups": "default"
+              }
+            }
           },
           "triggers": {
             "default pageview": {

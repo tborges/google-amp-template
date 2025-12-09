@@ -14,7 +14,7 @@ Use this package to create a website that uses Google AMP technology on your mob
   </div>
   <br><br>
 
-## About:: Google AMP (Accelerated Mobile Pages)
+## About: Google AMP (Accelerated Mobile Pages)
 The Google AMP project is an open-source initiative aiming to make the web better for all. The project enables the creation of websites and ads that are consistently fast, beautiful and high-performing across devices and distribution platforms. The Google AMP Cache serves cached copies of valid AMP content published to the web. Serve content directly from the Google AMP Cache to provide a fast user experience. <a href="https://developers.google.com/amp/cache/overview">Read more</a>
 
 <br>
@@ -88,7 +88,7 @@ $ npm run google-amp-template // Run the package
 <br>
 <br>
 <br>
-<h2>Help This Open-Source Project</2>
+<h2>Help This Open-Source Project</h2>
 <br>
   <!-- Pr's Welcome -->
   <a href="https://github.com/tborges/npm-packages/pulls">
@@ -96,7 +96,7 @@ $ npm run google-amp-template // Run the package
   </a>
   <br>
 <br>
-<h2>Buy Me A Coffee</2>
+<h2>Buy Me A Coffee</h2>
 <br>
   <!-- Buy Me A Coffee -->
 <a href="https://www.buymeacoffee.com/TBorges" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>

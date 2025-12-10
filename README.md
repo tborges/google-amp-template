@@ -35,8 +35,6 @@ npm install google-amp-template
 npm run google-amp-template
 ```
 
-> **Why is there a `#!/usr/bin/env node` line in `index.js`?**
-> This shebang tells your shell to execute the entry script with Node.js when it is run as a binary (for example via `npx google-amp-template` or `node_modules/.bin/google-amp-template`). Without it, the operating system would not know which interpreter to use for the CLI, so the ASCII-art intro and file generation would not run when the package is invoked directly after installation.
 
 ## Usage Examples
 ### Git clone

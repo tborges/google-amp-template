@@ -1,6 +1,6 @@
 {
   "name": "google-amp-template",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Google AMP Template Adds a valid Google AMP template to your project.",
   "main": "index.js",
   "bin": {
@@ -16,21 +16,14 @@
   "keywords": [
     "Google",
     "AMP",
-    "Google",
-    "AMP",
     "Template",
-    "Google",
-    "AMP",
     "Theme",
     "Google-AMP",
     "Google-AMP-Template",
     "Google-AMP-Theme",
     "front-end",
     "frontend",
-    "frontend",
-    "theme",
-    "responsive",
-    "theme"
+    "responsive"
   ],
   "author": "Troy Borges",
   "license": "ISC"

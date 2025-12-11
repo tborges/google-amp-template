@@ -3,6 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const { version } = require('./package.json');
+
 const FILENAME = 'index.html';
 const DEST_DIR = path.join(__dirname, 'amp');
 const SRC_PATH = path.join(__dirname, FILENAME);
@@ -15,7 +17,7 @@ const BANNER = [
   '|  ',
   '||',
   '||| Google-AMP-Template ',
-  '||| Beta-Mary - version 0.1.5',
+  `||| Beta-Mary - version ${version}`,
   '||| ',
   '||| Help this open-source project: ',
   '||| GitHub: https://github.com/tborges/google-amp-template',

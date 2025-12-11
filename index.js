@@ -1,41 +1,58 @@
 #!/usr/bin/env node
 
-const fs = require('fs'); //File Server
+const fs = require('fs');
 const path = require('path');
 
-let filename = 'index.html';
-let src = path.join(__dirname, filename);
-let destDir = path.join(__dirname, 'amp');
+const FILENAME = 'index.html';
+const DEST_DIR = path.join(__dirname, 'amp');
+const SRC_PATH = path.join(__dirname, FILENAME);
+const DEST_PATH = path.join(DEST_DIR, FILENAME);
 
-fs.access(destDir, (err) => {
-  if (err)
-    fs.mkdirSync(destDir);
-  copyFile(src, path.join(destDir, filename));
-});
+const BANNER = [
+  '+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+',
+  '|G O O G L E - A M P - T E M P L A T E|',
+  '+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+',
+  '|  ',
+  '||',
+  '||| Google-AMP-Template ',
+  '||| Beta-Mary - version 0.1.5',
+  '||| ',
+  '||| Help this open-source project: ',
+  '||| GitHub: https://github.com/tborges/google-amp-template',
+  '|| ',
+  '| '
+].join('\n');
 
-function copyFile(src, dest) {
-  let readStream = fs.createReadStream(src);
-  readStream.once('error', (err) => {
-    console.log(err);
-  });
-
-  readStream.once('end', () => {
-    console.log('' + '\n' +
-      '+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+' + '\n' +
-      '|G O O G L E - A M P - T E M P L A T E|' + '\n' +
-      '+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+' + '\n' +
-      '|  ' + '\n' +
-      '||' + '\n' +
-      '||| Google-AMP-Template ' + '\n' +
-      '||| Beta-Mary - version 0.1.5' + '\n' +
-      '||| ' + '\n' +
-      '||| Help this open-source project: ' + '\n' +
-      '||| GitHub: https://github.com/tborges/google-amp-template' + '\n' +
-      '|| ' + '\n' +
-      '| ' + '\n'
-    );
-  });
-
-  readStream.pipe(fs.createWriteStream(dest));
+function logBanner() {
+  console.log(`\n${BANNER}`);
 }
 
+async function ensureDestinationDirectory() {
+  try {
+    await fs.promises.mkdir(DEST_DIR, { recursive: true });
+  } catch (error) {
+    console.error('Failed to create destination directory:', error);
+    throw error;
+  }
+}
+
+async function copyFile() {
+  try {
+    await fs.promises.copyFile(SRC_PATH, DEST_PATH);
+    logBanner();
+  } catch (error) {
+    console.error('Failed to copy file:', error);
+    throw error;
+  }
+}
+
+async function main() {
+  try {
+    await ensureDestinationDirectory();
+    await copyFile();
+  } catch (error) {
+    process.exitCode = 1;
+  }
+}
+
+main();

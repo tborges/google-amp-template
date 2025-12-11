@@ -11,19 +11,26 @@ const SRC_PATH = path.join(__dirname, FILENAME);
 const DEST_PATH = path.join(DEST_DIR, FILENAME);
 
 const BANNER = [
-  '+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+',
-  '|G O O G L E - A M P - T E M P L A T E|',
-  '+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+',
-  '|  ',
-  '||',
-  '||| Google-AMP-Template ',
-  `||| Beta-Mary - version ${version}`,
-  '||| ',
-  '||| Help this open-source project: ',
-  '||| GitHub: https://github.com/tborges/google-amp-template',
-  '|| ',
-  '| '
-].join('\n');
+  "                __",
+  "               / _)",
+  "      _/\\/\\/\\_/ /",
+  "    _|         /",
+  "  _|  (  | (  |        T-REX APPROVES THIS TEMPLATE",
+  " /__.-'|_|--|_|",
+  "",
+  '+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+',
+  '|      G O O G L E   A M P   T E M P L A T E     |',
+  '+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+',
+  '| A lightweight starter template for AMP projects',
+  '|',
+  `| Version: Beta-Mary ${version}`,
+  '|',
+  '| Open-source & community supported',
+  '| GitHub: https://github.com/tborges/google-amp-template',
+  '|',
+  '+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+'
+].join('\\n');
+
 
 function logBanner() {
   console.log(`\n${BANNER}`);

@@ -29,7 +29,7 @@ const BANNER = [
   '| GitHub: https://github.com/tborges/google-amp-template',
   '|',
   '+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+'
-].join('\\n');
+].join('\n');
 
 
 function logBanner() {

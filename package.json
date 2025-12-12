@@ -1,6 +1,6 @@
 {
   "name": "google-amp-template",
-  "version": "0.1.7",
+  "version": "0.1.7.0",
   "description": "Google AMP Template Adds a valid Google AMP template to your project.",
   "main": "index.js",
   "bin": {
